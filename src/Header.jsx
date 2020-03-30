@@ -4,15 +4,16 @@ import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
-  root: {
-    background: 'red',
-    color: props => props.color
+  headerStyle: {
+    color: 'white',
+    textAlign: 'center'
   }
 });
 
 function Header() {
+  const classes = useStyles();
   return (
-    <AppBar position='static'>
+    <AppBar className={classes.headerStyle} position='static'>
       <Typography variant='h3'>Hello</Typography>
     </AppBar>
   );
