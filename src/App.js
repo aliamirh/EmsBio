@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Button variant='contained' color='primary'>
+      <Button variant='contained' color='secondary'>
         Hello World
       </Button>
     </div>
